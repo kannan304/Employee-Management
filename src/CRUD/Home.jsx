@@ -39,7 +39,7 @@ class Home extends Component {
   render() {
     return (
       <nav id={style.Nav}>
-        <a href="/" id={style.name}>Free storage</a>
+        <a href="" id={style.name}>Free storage</a>
         <div>
           <ul ref={this.navbarRef} id={style.navbar}>
             <li><Link to="/" onClick={this.closeMenu}>Home</Link></li>
