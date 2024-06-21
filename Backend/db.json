@@ -1,0 +1,41 @@
+{
+  "empolyee": [
+    {
+      "id": "1",
+      "empName": "Kannan J",
+      "empSalary": "260000",
+      "empJobRole": "Front-end Developer",
+      "empCompany": "Wipro"
+    },
+    {
+      "empName": "ms dhoni",
+      "empSalary": "2600000",
+      "empJobRole": "Software Engineer",
+      "empCompany": "Wipro",
+      "id": "d154"
+    },
+    {
+      "id": "19d0",
+      "empName": "Virat Kohli",
+      "empSalary": "100000",
+      "empJobRole": "Senior Data Enginner",
+      "empCompany": "Tcs"
+    },
+    {
+      "id": "c3d0",
+      "empName": "ajith kumar",
+      "empSalary": "270000",
+      "empJobRole": " Data scientist",
+      "empCompany": "ibm",
+      "empImage": ""
+    },
+    {
+      "id": "9034",
+      "empName": "joseph vijay",
+      "empSalary": "106000",
+      "empJobRole": "Quality assurance tester",
+      "empCompany": "wipro",
+      "empImage": ""
+    }
+  ]
+}
