@@ -1044,89 +1044,76 @@ code {
 /* ABOUT US */
 
 
-#Aboutus{
-    height: 550px;
+#Aboutus {
+    height: auto; 
     width: 80%;
     margin-left: 10%;
     margin-top: 40px;
-    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02); */
-    
 }
-.ContainerBox{
-    height: 40%;
-    width: 40%;
-    /* border: 2px solid red; */
-    /* padding: 10px; */
+
+.ContainerBox {
+    height: auto; 
+    width: 45%; 
     display: flex;
     margin-top: 20px;
     display: block;
-    
 }
-.Title{
+
+.Title {
     height: 50px;
     font-size: 16px;
-    border:1px solid orangered;
+    border: 1px solid orangered;
     border-radius: 10px 10px 0 0;
 }
-.Title>p{
+
+.Title>p {
     margin-top: 12px;
     margin-left: 20px;
     color: black;
     font-weight: 600;
 }
-.About{
-    height:78%;
+
+.About {
+    height: auto; 
     width: 100%;
-    /* border: 3px solid green; */
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
     padding: 20px;
     font-size: 16px;
 }
-.About>p{
+
+.About>p {
     text-align: justify;
     color: gray;
 }
 
-@media only screen and (min-width:767px) and (max-width:1170px) {
-  
-    .ContainerBox{
-        height: 350px;
-    }  
+
+@media (max-width: 1024px) {
+    #Aboutus {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .ContainerBox {
+        width: 45%;
+    }
 }
 
-@media only screen and (min-width:375px) and (max-width:767px){
+@media (max-width: 768px) {
+    .ContainerBox {
+        width: 100%;
+    }
+}
 
-   .ContainerBox{
-        height: 220px;
-        width: 450px;
-    }
-    .Title{
-        font-size: 16px;
-        height: 60px;
-    }
-    .About{
+@media (max-width: 480px) {
+    .Title {
         font-size: 14px;
-
     }
-}
-
-@media only screen and (max-width:375px) {
-    
-    .ContainerBox{
-        width: 96%;
-        height:220px;
-        margin-left: 2%;
-    }
-    .Title{
-        font-size: 12px;
-    }
-    .About{
-        font-size: 12px;
+    .About {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
