@@ -11,7 +11,7 @@ const User = () => {
 
     useEffect(()=>{
 
-      axios.get("http://localhost:5000/empolyee")
+      axios.get("https://free-storage.vercel.app/api/empolyee")
       .then((response)=>{setUser(response.data)})
       .catch(()=>{console.log("Error")})
       setReload(false)
@@ -19,8 +19,8 @@ const User = () => {
       
 
     let deleteUser=(id)=>{
-      axios.delete(`http://localhost:5000/empolyee/${id}`)
-      setReload(true)
+        axios.delete(`https://free-storage.vercel.app/api/empolyee/${id}`)
+          .then(() => { setReload(true) });
     }
 
       return (
