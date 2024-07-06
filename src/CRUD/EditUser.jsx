@@ -38,24 +38,24 @@ const EditUser = () => {
         empJobRole:job,
         empCompany:company
       }
-      axios.put(`http://localhost:5000/empolyee/${userId.id}`,payload)
-      .then(()=>{console.log("Updated Done")})
+      axios.put(`https://free-storage.vercel.app/api/empolyee/${userId.id}`, payload)
+  .then(() => { console.log("Updated Done") });
 
       navigate("/user")
     }
 
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/empolyee/${userId.id}`)
-        .then((response)=>{
-            setName(response.data.empName)
-            setSalary(response.data.empSalary)
-            setCompany(response.data.empCompany)
-            setJob(response.data.empJobRole)
-        })
-        .catch(()=>{
-            console.log("Something went wrong ...")
-        })
+        axios.get(`https://free-storage.vercel.app/api/empolyee/${userId.id}`)
+          .then((response) => {
+            setName(response.data.empName);
+            setSalary(response.data.empSalary);
+            setCompany(response.data.empCompany);
+            setJob(response.data.empJobRole);
+              })
+          .catch(() => {
+            console.log("Something went wrong ...");
+          });
     },[])
 
  return (
