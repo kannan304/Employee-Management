@@ -41,7 +41,7 @@ const CreateUser = () => {
       empCompany:company,
       empImage:image
     }
-    axios.post("http://localhost:5000/empolyee",user)
+    axios.post("https://free-storage.vercel.app/api/empolyee",user)
     .then(()=>{console.log("Info Updated")})
     .catch(()=>{console.log("Try again later")})
 
