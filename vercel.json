@@ -1,9 +1,27 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "http://localhost:5000/$1"
+      "src": "/api/*",
+      "dest": "json-server"
     }
-  ]
+  ],
+  "functions": {
+    "json-server": {
+      "runtime": "nodejs14.x",
+      "handler": "json-server",
+      "environment": {
+        "DATABASE_URL": "https://free-storage.vercel.app/db.json"
+      }
+    }
+  }
 }
